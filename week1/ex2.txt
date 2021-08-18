@@ -1,0 +1,206 @@
+    1  sudo apt-get update
+    2  sudo apt-get upgrade
+    3  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    4  sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+    5  sudo apt-get update
+    6  sudo apt-get install google-chrome-stable
+    7  prime-select query
+    8  sudo apt-get install gcc python3 gdb openjdk-11-jdk
+    9  sudo apt-get install git
+   10  sudo apt-get install man
+   11  sudo rmmod ideapad_laptop 
+   12  sudo apt-update && sudo apt dist-upgrade
+   13  sudo apt-get update && sudo apt dist-upgrade
+   14  sudo gedit /etc/modprobe.d/blacklist.conf
+   15  sudo apt install nvidia-driver-470 nvidia-prime
+   16  sudo rebbot
+   17  sudo reboot
+   18  prime-select query
+   19  nvidia-smi
+   20  sudo apt-get install gnome-tweaks
+   21  gnome-tweaks 
+   22  sudo apt-get install virtualenv
+   23  sudo apt-get install python3
+   24  sudo apt-get update
+   25  sudo apt-get remove docker docker-engine docker.io containerd runc
+   26  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+   27  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   28  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+   29    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   30  sudo apt-get update
+   31  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   32  sudo docker run hello-world
+   33  docker run -it ubuntu bash
+   34  sudo docker run -it ubuntu bash
+   35  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   36  sudo chmod +x /usr/local/bin/docker-compose
+   37  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   38  docker-compose --version
+   39  sudo usermod -aG docker yesliesnayder 
+   40  sudo service docker restart
+   41  cd Documents/
+   42  docker run -it --name testapp --hostname test ubuntu bash
+   43  clear
+   44  sudo docker run -it --name testapp --hostname test ubuntu bash
+   45  docker sp
+   46  docker ps
+   47  sudo usermod -aG docker yesliesnayder
+   48  sudo service docker restart
+   49  docker ps
+   50  sudo docker ps
+   51  sudo docker ps -a
+   52  sudo docker commit testapp yesliesnayder/test
+   53  docker images
+   54  sudo docker images
+   55  sudo docker run yesliesnayder/test cowsay "Hi"
+   56  docker push yesliesnayder/test
+   57  sudo docker push yesliesnayder/test
+   58  docker login -u yesliesnayder
+   59  sudo docker login -u yesliesnayder
+   60  sudo docker push yesliesnayder/test
+   61  ls
+   62  ll
+   63  mkdir testPorj
+   64  clear
+   65  docker images
+   66  cd testProj/
+   67  sudo docker images
+   68  docker rm yesliesnayder/test hellow-world
+   69  sudo docker rm yesliesnayder/test hellow-world
+   70  sudo docker rm yesliesnayder/test
+   71  sudo docker rm -v $(sudo docker ps -aq -f status=exited)
+   72  docker ps -a
+   73  sudo docker ps -a
+   74  sudo docker rmi defed30ab527
+   75  sudo docker rmi yesliesnayder/test
+   76  sudo docker rmi hello-world
+   77  clear
+   78  vim --version
+   79  sudo apt-get install vim
+   80  clear
+   81  vim Dockerfile
+   82  docker build -t yesliesnayder/testapp
+   83  sudo docker build -t yesliesnayder/testapp
+   84  sudo docker build -t yesliesnayder/testapp .
+   85  docker run yesliesnayder/testapp "Hi, it's test"
+   86  sudo docker run yesliesnayder/testapp "Hi, it's test"
+   87  sudo docker push yesliesnayder/testapp
+   88  sudo docker push yesliesnayder/testapp:beta
+   89  sudo docker rmi yesliesnayder/testapp
+   90  sudo docker ps -a
+   91  sudo docker rm unruffled_bardeen
+   92  sudo docker rmi yesliesnayder/testapp
+   93  sudo docker ps -a
+   94  clear
+   95  docker run -p 127.0.0.1:3306:3306  --name mysqldatabase -e MARIADB_ROOT_PASSWORD=123456 -d mariadb
+   96  sudo docker run -p 127.0.0.1:3306:3306  --name mysqldatabase -e MARIADB_ROOT_PASSWORD=123456 -d mariadb
+   97  sudo docker ps -a
+   98  sudo docker run --link mysqldatabase:db -p 8080:8080 adminer
+   99  docker -v
+  100  docker ps -a
+  101  sudo groupadd docker
+  102  sudo usermod -aG docker yesliesnayder
+  103  newgrp docker
+  104  docker ps -a
+  105  docker rm focused_dhawan mysqldatabase
+  106  docker stop focused_dhawan
+  107  docker ps -a
+  108  docker stop mysqldatabase 
+  109  docker rm mysqldatabase 
+  110  ls
+  111  docker ps -a
+  112  clear
+  113  timedatectl set-local-rtc 1
+  114  sudo apt update
+  115  sudo apt upgrade
+  116  sudo apt-get install telegram-desktop
+  117  sudo apt-get install node
+  118  npm install -g eslint
+  119  sudo npm install -g eslint
+  120  sudo apt-get install npm
+  121  apm install browser-plus
+  122  mkdir test
+  123  cd test/
+  124  touch file.txt
+  125  mkdir innerTest
+  126  touch innerTest/file1.txt
+  127  mkdir iTest
+  128  mv innerTest iTest
+  129  cd ..
+  130  rm -rf test/
+  131  ls
+  132  exir
+  133  exit
+  134  nvidia-dmi
+  135  nvidia-smi
+  136  whoami
+  137  hostname
+  138  man man
+  139  exit
+  140  quit
+  141  exit
+  142  wait
+  143  exit
+  144  cd .themes/
+  145  ls
+  146  sudo mv -r volantes_cursors/ /usr/share/icons/
+  147  sudo mv volantes_cursors/ /usr/share/icons/
+  148  sudo mv Downloads/Nordzy-white-cursors/ /usr/share/icons/
+  149  cd /usr/share/icons/
+  150  sudo mkdir Nordzy-white
+  151  mv Nordzy-white-cursors/ Nordzy-white
+  152  sudo mv Nordzy-white-cursors/ Nordzy-white
+  153  cd No
+  154  cd Nordzy-white/
+  155  mv Nordzy-white-cursors cursors
+  156  sudo mv Nordzy-white-cursors cursors
+  157  ipconfig
+  158  docker run --name my-sqlserver -e MARIADB_ROOT_PASSWORD=123321 -d mariadb
+  159  ls
+  160  docker ps
+  161  docker run --link my-sqlserver:db -p 8080:8080 adminer
+  162  docker ps
+  163  docker rm mariadb
+  164  docker rm my-sqlserver
+  165  docker stop my-sqlserver
+  166  docker ps
+  167  curl https://ipinfo.io/ip
+  168  curl -s https://checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+  169  clear
+  170  curl -s https://checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+  171  curl https://ipinfo.io/ip
+  172  ls
+  173  mkdir ~/week1
+  174  cd ~/week1/
+  175  man find
+  176  find /usr/bin -name "gcc"
+  177  find /usr/bin -name "*gcc*"
+  178  find /usr/bin -name "*gcc"
+  179  find /usr/bin -name "*gcc*"
+  180  find /usr/bin -name "*gcc*" | sort -ar
+  181  find /usr/bin -name "*gcc*" | sort -r
+  182  find /usr/bin -name "*gcc*" | sort -r > ~/week1/ex1.txt
+  183  cat ex1.txt 
+  184  clear
+  185  git 
+  186  cd ..
+  187  ls
+  188  mkdir study
+  189  mkdir study/OperatingSystems
+  190  cd study/OperatingSystems/
+  191  git init OperatingSystems
+  192  ls
+  193  rm -r OperatingSystems/
+  194  cd ..
+  195  rm -r OperatingSystems/
+  196  ls
+  197  git init OperatingSystems
+  198  ls
+  199  cd Opera
+  200  cd OperatingSystems/
+  201  mkdir week1
+  202  cd week1/
+  203  find /usr/bin "*gcc*" | sort -r > ex1.txt
+  204  find /usr/bin -name "*gcc*" | sort -r > ex1.txt
+  205  cat ex1.txt 
+  206  history > ex2.txt
