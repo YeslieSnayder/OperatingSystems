@@ -8,7 +8,7 @@ void reverse(char* str, int size);
 int main() {
 	char s[SIZE];	// Variable for a sentence
 
-	printf("Please, enter a string (max size 200 characters):\n");
+	printf("Please, enter a string (max size %d characters):\n", SIZE);
 	fgets(s, SIZE, stdin);	// Listening user
 
 	reverse(s, strlen(s));	// Reverse a string
