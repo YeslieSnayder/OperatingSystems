@@ -1,0 +1,9 @@
+The number: 1
+The number: 600
+The number: 1199
+Final number: 1209
+
+Description:
+
+Race condition occurs in the 3rd line: it increases by 599, but should be 600.
+The result differs in several tries to execute the program.
