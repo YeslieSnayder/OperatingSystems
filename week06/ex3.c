@@ -65,7 +65,7 @@ void round_robin(Proc** pcs, int size, int quantum) {
 	sort(pcs, size);
 	
 	double avgTT = 0, avgWT = 0;
-	int time = size > 0 ? pcs[0]->arrival : 0, pcsnum = size, is_done = 0;
+	int time = size > 0 ? pcs[0]->arrival : 0, pcsnum = size, process_is_done = 0;
 	int temp[size];
 	for (int i = 0; i < size; i++)
 		temp[i] = pcs[i]->burst;
@@ -74,14 +74,14 @@ void round_robin(Proc** pcs, int size, int quantum) {
 		if (temp[i] <= quantum && temp[i] > 0) {
 			time += temp[i];
 			temp[i] = 0;
-			is_done = 1;
+			process_is_done = 1;
 		} else if (temp[i] > 0) {
 			temp[i] -= quantum;
 			time += quantum;
 		}
-		if (temp[i] == 0 && is_done) {
+		if (process_is_done) {
 			pcsnum--;
-			is_done = 0;
+			process_is_done = 0;
 			pcs[i]->CT = time;
 			pcs[i]->TAT = time - pcs[i]->arrival;
 			pcs[i]->WT = pcs[i]->TAT - pcs[i]->burst;
