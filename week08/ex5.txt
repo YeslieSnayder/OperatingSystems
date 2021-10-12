@@ -1,0 +1,4 @@
+Physical address represents hardware address (memory). It is limited by hardware.
+
+Virtual address represents virtual memory that can be much bigger than physical one.
+It is also limited, but it does not depend on main memory.

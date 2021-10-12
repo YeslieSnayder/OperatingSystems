@@ -1,0 +1,2 @@
+After using top with delay=1 I obtained that
+virtual memory (VIRT) and resources (RES) for my process (ex2_1000MB) is increasing.

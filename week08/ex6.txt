@@ -1,0 +1,10 @@
+2^16 / 2^13 = 8 entities
+
+2^16 - is a number for virtual addresses;
+8 KB = 2^13 - is an offset for each entry (page)
+
+16 - 13 = 3 - bits for address of entities
+
+3 bits can represent 2^3 = 8 entities
+
+ANSWER: 8 entities.
