@@ -1,0 +1,17 @@
+INITIAL permissions
+-rwxrwxrwx 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+
+Remove execute permissions
+-rw-rw-r-- 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+
+User and Others have all permissions
+-rwxrw-rwx 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+
+Group permissions are equal
+-rwxrwxrwx 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+
+
+Answers
+660: Makes the file read\write for user(owner) and group of the user and removes all permissions for other users.
+775: Gives all permissions for user(owner) and his group, also gives read/execute access for other users.
+777: Gives all permissions of that file for everyone.
