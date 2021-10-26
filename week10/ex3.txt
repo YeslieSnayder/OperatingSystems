@@ -1,14 +1,14 @@
 INITIAL permissions
--rwxrwxrwx 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+-rwxrwxrwx 1 yesliesnayder yesliesnayder 25 окт 26 19:24 _ex3.txt
 
 Remove execute permissions
--rw-rw-r-- 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+-rw-rw-r-- 1 yesliesnayder yesliesnayder 25 окт 26 19:24 _ex3.txt
 
 User and Others have all permissions
--rwxrw-rwx 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+-rwxrw-rwx 1 yesliesnayder yesliesnayder 25 окт 26 19:24 _ex3.txt
 
 Group permissions are equal
--rwxrwxrwx 1 yesliesnayder yesliesnayder 0 окт 22 18:16 _ex3.txt
+-rwxrwxrwx 1 yesliesnayder yesliesnayder 25 окт 26 19:24 _ex3.txt
 
 
 Answers

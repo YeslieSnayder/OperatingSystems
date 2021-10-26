@@ -2,6 +2,8 @@
 FILE=_ex3.txt
 MAIN=ex3.txt
 
+echo 'Andrey Kuzmickiy BS20-04' > $FILE
+
 echo 'INITIAL permissions' > $MAIN
 touch $FILE
 ls -l $FILE >> $MAIN
