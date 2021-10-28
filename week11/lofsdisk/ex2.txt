@@ -1,0 +1,6 @@
+file1.txt
+file2.txt
+ex2.out
+ex2.txt
+ex2.c
+
