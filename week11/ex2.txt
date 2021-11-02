@@ -1,6 +1,6 @@
+With chroot:
 ex2.c
 ex2.out
-ex2.txt
 file2.txt
 file1.txt
 .
@@ -8,3 +8,26 @@ lib
 lib64
 bin
 ..
+
+
+Without chroot:
+snap
+root
+boot
+usr
+media
+cdrom
+proc
+mnt
+run
+etc
+tmp
+.
+..
+srv
+opt
+sys
+home
+lost+found
+dev
+var

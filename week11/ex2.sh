@@ -40,6 +40,7 @@ sudo cp /lib/x86_64-linux-gnu/libpcre2-8.so.0 $FSDISK/lib/x86_64-linux-gnu
 #sudo chroot $FSDISK /bin/bash
 #sudo ./$FSDISK/ex2.out >> $FSDISK/ex2.txt
 
-sudo chroot $FSDISK ./ex2.out > ex2.txt
-exit
+echo 'With chroot:' > ex2.txt
+sudo chroot $FSDISK ./ex2.out >> ex2.txt
+echo '\n\nWithout chroot:' >> ex2.txt
 ./ex2.out >> ex2.txt
