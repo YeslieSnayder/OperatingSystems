@@ -5,13 +5,13 @@
 #include <stdio.h>
 
 int main() {
-	chroot(".");
+	//chroot(".");
 	DIR *dir = opendir("/");
 	if (dir == NULL) return -1;
 
 	struct dirent *dp;
 	while ((dp = readdir(dir)) != NULL) {
-		if (dp->d_type == DT_REG)
+		if (dp->d_type == DT_REG || dp->d_type == DT_DIR)
 			printf("%s\n", dp->d_name);
 	}
 	closedir(dir);
